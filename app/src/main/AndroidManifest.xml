@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LafayetteProjeto">
-        <activity android:name=".ManageHomeActivity"></activity>
+        <activity android:name=".MainManageActivity"></activity>
         <activity android:name=".EsqueceuSenhaActivity" />
         <activity
             android:name=".LoginActivity"
