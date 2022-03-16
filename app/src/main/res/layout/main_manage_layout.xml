@@ -7,35 +7,31 @@
     tools:context=".MainManageActivity"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        >
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="50"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabBlog"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Blog"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-           />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="50"
+            android:text="Blog"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGaleria"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Galeria"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:text="Galeria"/>
 
-            />
+    </com.google.android.material.tabs.TabLayout>
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vwPaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    </LinearLayout>
+    </androidx.viewpager.widget.ViewPager>
 
 
 

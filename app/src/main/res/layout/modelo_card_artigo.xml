@@ -9,7 +9,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card"
+            android:id="@+id/cardArtigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp">
@@ -27,12 +27,14 @@
 
                     <!-- Title, secondary and supporting text -->
                     <TextView
+                        android:id="@+id/txtTitulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Titulo"
                         android:textAppearance="?attr/textAppearanceHeadline6" />
 
                     <TextView
+                        android:id="@+id/txtSubTitulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -41,6 +43,7 @@
                         android:textColor="?android:attr/textColorSecondary" />
 
                     <TextView
+                        android:id="@+id/txtInfo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
@@ -59,6 +62,7 @@
                     android:layout_gravity="right">
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnVisualizar"
                         style="?attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -67,6 +71,7 @@
                         android:text="Ver" />
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDeletar"
                         style="?attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
