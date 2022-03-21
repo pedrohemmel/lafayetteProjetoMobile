@@ -1,6 +1,7 @@
 package br.com.local.lafayetteprojeto;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +37,23 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull AdapterBlog.MyViewHolder holder, int position) {
+        //setando os valores do artigo
+        holder.txtTitulo.setText(mData.get(position).getTitulo());
+        holder.txtSubTitulo.setText(mData.get(position).getSubTitulo());
+        holder.txtInfo.setText(mData.get(position).getInfo());
 
+        holder.btnVisualizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MainManageActivity.class);
+
+                intent.putExtra("Titulo", mData.get(position).getTitulo());
+                intent.putExtra("Sub Titulo", mData.get(position).getSubTitulo());
+                intent.putExtra("Info", mData.get(position).getInfo());
+
+                mContext.startActivity(intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK));
+            }
+        });
     }
 
     @Override

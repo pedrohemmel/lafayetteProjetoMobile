@@ -4,34 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login_projeto_sonhar"
     android:orientation="vertical"
-    android:background="@drawable/background_projeto_sonhar"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Login"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ola_entre_login" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite seu login" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/e_mail"
+        app:startIconContentDescription="Conteudo"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_">
 
-    <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite sua senha" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/senha"
+        app:startIconContentDescription="Conteudo"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
 
     <Button
         android:id="@+id/btnEntrar"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
         android:text="Entrar"
-        app:strokeColor="#FF6200EE"
-        style="?attr/materialButtonOutlinedStyle"
-        />
+        app:strokeColor="#FF6200EE" />
 
     <TextView
         android:id="@+id/txtEsqueceuSenha"
@@ -39,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:autoLink="web"
-        android:text="Esqueceu a senha?"/>
+        android:fontFamily="@font/roboto_regular"
+        android:text="Esqueceu a senha?" />
 
 </LinearLayout>
