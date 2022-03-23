@@ -10,14 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="130dp">
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/projeto_aprender_sonhar_logo"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/projeto_aprender_sonhar_logo" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtEmail"
@@ -28,7 +28,7 @@
             android:hint="@string/e_mail"
             app:startIconContentDescription="Conteudo"
             app:startIconDrawable="@drawable/ic_baseline_account_circle_novo"
-            >
+            app:startIconTint="@color/first_color">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -45,7 +45,9 @@
             android:layout_marginRight="20dp"
             android:hint="@string/senha"
             app:startIconContentDescription="Conteudo"
-            app:startIconDrawable="@drawable/ic_baseline_vpn_key_">
+            app:startIconDrawable="@drawable/ic_baseline_vpn_key"
+            app:startIconTint="@color/first_color"
+            app:strokeColor="#f26434">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -57,26 +59,18 @@
 
         <Button
             android:id="@+id/btnEntrar"
-            android:layout_gravity="end"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f26434"
             android:fontFamily="@font/roboto_regular"
             android:text="Entrar"
             android:textColor="#fff"
-            android:backgroundTint="#f26434"
             app:strokeColor="#f26434" />
 
-        <TextView
-            android:id="@+id/txtEsqueceuSenha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:autoLink="web"
-            android:fontFamily="@font/roboto_regular"
-            android:text="Esqueceu a senha?" />
     </LinearLayout>
 
 

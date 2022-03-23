@@ -57,9 +57,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="right"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal"
-                    android:layout_gravity="right">
+                    android:orientation="horizontal">
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnVisualizar"
@@ -68,6 +68,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
+
                         android:text="Ver" />
 
                     <com.google.android.material.button.MaterialButton
@@ -75,7 +76,8 @@
                         style="?attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Deletar" />
+                        android:text="Deletar"
+                        android:textColor="@color/secondary_color" />
                 </LinearLayout>
 
             </LinearLayout>
