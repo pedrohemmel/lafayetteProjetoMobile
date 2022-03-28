@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LafayetteProjeto">
-        <activity android:name=".MainManageActivity"></activity>
-        <activity android:name=".EsqueceuSenhaActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".EditGaleriaActivity"
+            android:exported="true"
+            android:theme="@style/TemaSemBarra">
+
+        </activity>
+        <activity
+            android:name=".EditBlogActivity"
             android:exported="true"
             android:theme="@style/TemaSemBarra">
             <intent-filter>
@@ -20,6 +24,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".MainManageActivity" />
+        <activity android:name=".EsqueceuSenhaActivity" />
+        <activity
+            android:name=".LoginActivity"
+
+            android:theme="@style/TemaSemBarra">
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>

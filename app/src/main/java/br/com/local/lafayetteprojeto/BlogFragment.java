@@ -27,7 +27,7 @@ public class BlogFragment extends Fragment {
 
         lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
 
-        RecyclerView mAdapterBlog = findViewById(R.id.recyclerViewBlog);
+
 
 
 
