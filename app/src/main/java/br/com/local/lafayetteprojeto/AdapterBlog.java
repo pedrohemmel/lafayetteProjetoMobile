@@ -30,7 +30,7 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
         View view;
 
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        view = mInflater.inflate(R.layout.modelo_card_artigo, parent, false); //Não entendi
+        view = mInflater.inflate(R.layout.modelo_card_artigo, parent, false);
 
         return new MyViewHolder(view);
     }
@@ -42,7 +42,7 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
         holder.txtSubTitulo.setText(mData.get(position).getSubTitulo());
         holder.txtInfo.setText(mData.get(position).getInfo());
 
-        holder.btnVisualizar.setOnClickListener(new View.OnClickListener() {
+       /* holder.btnVisualizarArtigo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, MainManageActivity.class);
@@ -53,7 +53,7 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
 
                 mContext.startActivity(intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK));
             }
-        });
+        });*/
     }
 
     @Override
@@ -66,8 +66,8 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
         TextView txtTitulo;
         TextView txtSubTitulo;
         TextView txtInfo;
-        Button btnVisualizar;
-        Button btnDeletar;
+        Button btnVisualizarArtigo;
+        Button btnDeletarArtigo;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -76,8 +76,8 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
             txtTitulo = itemView.findViewById(R.id.txtTitulo);
             txtSubTitulo = itemView.findViewById(R.id.txtSubTitulo);
             txtInfo = itemView.findViewById(R.id.txtInfo);
-            btnVisualizar = itemView.findViewById(R.id.btnVisualizar);
-            btnDeletar = itemView.findViewById(R.id.btnDeletar);
+            btnVisualizarArtigo = itemView.findViewById(R.id.btnVisualizarArtigo);
+            btnDeletarArtigo = itemView.findViewById(R.id.btnDeletarArtigo);
         }
     }
 }

@@ -62,7 +62,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnVisualizar"
+                        android:id="@+id/btnVisualizarArtigo"
                         style="?attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                         android:text="Ver" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnDeletar"
+                        android:id="@+id/btnDeletarArtigo"
                         style="?attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

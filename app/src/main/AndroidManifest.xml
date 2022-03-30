@@ -11,28 +11,20 @@
         android:theme="@style/Theme.LafayetteProjeto">
         <activity
             android:name=".EditGaleriaActivity"
-            android:exported="true"
-            android:theme="@style/TemaSemBarra">
-
-        </activity>
+            android:theme="@style/TemaSemBarra" />
         <activity
             android:name=".EditBlogActivity"
-            android:exported="true"
-            android:theme="@style/TemaSemBarra">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:theme="@style/TemaSemBarra" />
         <activity android:name=".MainManageActivity" />
         <activity android:name=".EsqueceuSenhaActivity" />
         <activity
             android:name=".LoginActivity"
-
+            android:exported="true"
             android:theme="@style/TemaSemBarra">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
     </application>
