@@ -30,7 +30,7 @@ public class AdapterGaleria extends RecyclerView.Adapter<AdapterGaleria.MyViewHo
         View view;
 
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        view = mInflater.inflate(R.layout.modelo_card_galeria, parent, true);
+        view = mInflater.inflate(R.layout.modelo_card_galeria, parent, false);
 
         return new MyViewHolderGaleria(view);
     }

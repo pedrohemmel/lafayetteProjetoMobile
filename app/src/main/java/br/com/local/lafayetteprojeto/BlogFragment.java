@@ -28,6 +28,9 @@ public class BlogFragment extends Fragment {
 
         lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
         lstArtigos.add(new Artigos("Gabriel", "Bueno", "O brabo inverso"));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewBlog);
 
