@@ -26,11 +26,11 @@ public class BlogFragment extends Fragment {
 
         lstArtigos = new ArrayList<>();
 
-        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
-        lstArtigos.add(new Artigos("Gabriel", "Bueno", "O brabo inverso"));
-        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
-        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
-        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo"));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo", R.drawable.cachorrinho));
+        lstArtigos.add(new Artigos("Gabriel", "Bueno", "O brabo inverso", R.drawable.passaro_rainbow));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo", R.drawable.cachorrinho));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo", R.drawable.passaro_rainbow));
+        lstArtigos.add(new Artigos("Pedro", "Henrique", "O brabo", R.drawable.cachorrinho));
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewBlog);
 

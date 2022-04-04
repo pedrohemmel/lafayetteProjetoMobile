@@ -15,7 +15,7 @@
         <activity
             android:name=".EditBlogActivity"
             android:theme="@style/TemaSemBarra" />
-        <activity android:name=".MainManageActivity" />
+        <activity android:name=".MainManageActivity"/>
         <activity android:name=".EsqueceuSenhaActivity" />
         <activity
             android:name=".LoginActivity"

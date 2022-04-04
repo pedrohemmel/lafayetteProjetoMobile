@@ -4,7 +4,6 @@
     <item
         android:id="@+id/icFilter"
         android:contentDescription="@string/filter_of_information"
-        android:icon="@drawable/ic_baseline_filter_list"
-        android:title="@string/filter"
-        app:showAsAction="never" />
+        android:title="Editar"
+        app:showAsAction="always" />
 </menu>

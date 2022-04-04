@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,20 +42,18 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
         //setando os valores do artigo
         holder.txtTitulo.setText(mData.get(position).getTitulo());
         holder.txtSubTitulo.setText(mData.get(position).getSubTitulo());
-        holder.txtInfo.setText(mData.get(position).getInfo());
+        holder.txtSinopse.setText(mData.get(position).getSinopse());
+        holder.imgArtigo.setImageResource(mData.get(position).getImagemArt());
 
-       /* holder.btnVisualizarArtigo.setOnClickListener(new View.OnClickListener() {
+        holder.btnVisualizarArtigo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, MainManageActivity.class);
-
-                intent.putExtra("Titulo", mData.get(position).getTitulo());
-                intent.putExtra("Sub Titulo", mData.get(position).getSubTitulo());
-                intent.putExtra("Info", mData.get(position).getInfo());
-
-                mContext.startActivity(intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK));
+                Intent intent = new Intent(mContext, EditBlogActivity.class);
+                intent.putExtra("Sinopse", mData.get(position).getSinopse());
+                intent.putExtra("Imagem", mData.get(position).getImagemArt());
+                mContext.startActivity(intent);
             }
-        });*/
+        });
     }
 
     @Override
@@ -66,7 +65,8 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
 
         TextView txtTitulo;
         TextView txtSubTitulo;
-        TextView txtInfo;
+        TextView txtSinopse;
+        ImageView imgArtigo;
         Button btnVisualizarArtigo;
         Button btnDeletarArtigo;
 
@@ -74,9 +74,10 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
             super(itemView);
 
             //Referenciando objetos para o card
+            txtSinopse = itemView.findViewById(R.id.txtSinopse);
             txtTitulo = itemView.findViewById(R.id.txtTitulo);
             txtSubTitulo = itemView.findViewById(R.id.txtSubTitulo);
-            txtInfo = itemView.findViewById(R.id.txtInfo);
+            imgArtigo = itemView.findViewById(R.id.imgArtigo);
             btnVisualizarArtigo = itemView.findViewById(R.id.btnVisualizarArtigo);
             btnDeletarArtigo = itemView.findViewById(R.id.btnDeletarArtigo);
         }

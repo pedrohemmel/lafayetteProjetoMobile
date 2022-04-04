@@ -5,13 +5,13 @@ public class Galeria {
     private int foto;
     private String titulo;
     private String secTexto;
-    private String supportTexto;
+    private String sinopseGaleria;
 
-    public Galeria(int foto, String titulo, String secTexto, String supportTexto) {
+    public Galeria(int foto, String titulo, String secTexto, String sinopseGaleria) {
         this.foto = foto;
         this.titulo = titulo;
         this.secTexto = secTexto;
-        this.supportTexto = supportTexto;
+        this.sinopseGaleria = sinopseGaleria;
     }
 
     public int getFoto() {
@@ -38,11 +38,11 @@ public class Galeria {
         this.secTexto = secTexto;
     }
 
-    public String getSupportTexto() {
-        return supportTexto;
+    public String getSinopseGaleria() {
+        return sinopseGaleria;
     }
 
-    public void setSupportTexto(String supportTexto) {
-        this.supportTexto = supportTexto;
+    public void setSinopseGaleria(String sinopseGaleria) {
+        this.sinopseGaleria = sinopseGaleria;
     }
 }

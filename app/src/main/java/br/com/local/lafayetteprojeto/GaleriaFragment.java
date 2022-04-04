@@ -26,8 +26,8 @@ public class GaleriaFragment extends Fragment {
 
         galeriaList = new ArrayList<>();
 
-        galeriaList.add(new Galeria(R.drawable.cachorrinho, "Cachorro", "Tigre", "Bravo"));
-        galeriaList.add(new Galeria(R.drawable.passaro_rainbow, "Passarinho", "Qualquer coisa", "Fofinho"));
+        galeriaList.add(new Galeria(R.drawable.cachorrinho, "Cachorro", "Tigre", "oi"));
+        galeriaList.add(new Galeria(R.drawable.passaro_rainbow, "Passarinho", "Qualquer coisa", "oi"));
 
         RecyclerView mRecycler = view.findViewById(R.id.recyclerViewGaleria);
 

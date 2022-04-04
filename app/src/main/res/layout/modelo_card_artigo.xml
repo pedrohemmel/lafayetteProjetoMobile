@@ -42,14 +42,6 @@
                         android:textAppearance="?attr/textAppearanceBody2"
                         android:textColor="?android:attr/textColorSecondary" />
 
-                    <TextView
-                        android:id="@+id/txtInfo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="Prévia"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary" />
 
                 </LinearLayout>
 
@@ -79,6 +71,21 @@
                         android:text="Deletar"
                         android:textColor="@color/secondary_color" />
                 </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgArtigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/meio_ambiente"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtSinopse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="oi"
+                    android:visibility="gone" />
+
 
             </LinearLayout>
 

@@ -4,13 +4,14 @@ public class Artigos {
     //atributos globais
     private String titulo;
     private String subTitulo;
-    private String info;
+    private String sinopse;
+    private int imagemArt;
 
-
-    public Artigos(String titulo, String subTitulo, String info) {
+    public Artigos(String titulo, String subTitulo, String sinopse, int imagemArt) {
         this.titulo = titulo;
         this.subTitulo = subTitulo;
-        this.info = info;
+        this.sinopse = sinopse;
+        this.imagemArt = imagemArt;
     }
 
     public String getTitulo() {
@@ -29,11 +30,19 @@ public class Artigos {
         this.subTitulo = subTitulo;
     }
 
-    public String getInfo() {
-        return info;
+    public String getSinopse() {
+        return sinopse;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setSinopse(String sinopse) {
+        this.sinopse = sinopse;
+    }
+
+    public int getImagemArt() {
+        return imagemArt;
+    }
+
+    public void setImagemArt(int imagemArt) {
+        this.imagemArt = imagemArt;
     }
 }

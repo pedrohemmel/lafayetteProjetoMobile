@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -41,7 +42,8 @@ public class AdapterGaleria extends RecyclerView.Adapter<AdapterGaleria.MyViewHo
         holder.imageView.setImageResource(mData.get(position).getFoto());
         holder.txtTitulo.setText(mData.get(position).getTitulo());
         holder.txtSecTexto.setText(mData.get(position).getSecTexto());
-        holder.txtSupportTexto.setText(mData.get(position).getSupportTexto());
+        holder.txtSinopseGaleria.setText(mData.get(position).getSinopseGaleria());
+
 
     }
 
@@ -54,14 +56,18 @@ public class AdapterGaleria extends RecyclerView.Adapter<AdapterGaleria.MyViewHo
         ImageView imageView;
         TextView txtTitulo;
         TextView txtSecTexto;
-        TextView txtSupportTexto;
+        TextView txtSinopseGaleria;
+        Button btnVisualizarGaleria;
+        Button btnDeletarGaleria;
 
         public MyViewHolderGaleria(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imgFoto);
             txtTitulo = itemView.findViewById(R.id.lblTitulo);
             txtSecTexto = itemView.findViewById(R.id.lblSecText);
-            txtSupportTexto = itemView.findViewById(R.id.lblSupportText);
+            txtSinopseGaleria = itemView.findViewById(R.id.txtSinopseGaleria);
+            btnVisualizarGaleria = itemView.findViewById(R.id.btnVisualizarGaleria);
+            btnDeletarGaleria = itemView.findViewById(R.id.btnDeletarGaleria);
 
         }
     }
