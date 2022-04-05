@@ -12,6 +12,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 public class EditBlogActivity extends AppCompatActivity {
 
+    private TextView txtTituloBlog;
     private TextView txtEditBlog;
     private ImageView imgArtigo;
     private MaterialToolbar topBarEdit;
@@ -21,6 +22,7 @@ public class EditBlogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_blog_layout);
 
+        txtTituloBlog = findViewById(R.id.txtTituloBlog);
         imgArtigo = findViewById(R.id.imgEditBlog);
         txtEditBlog = findViewById(R.id.txtEditBlog);
         topBarEdit = findViewById(R.id.topAppBar);
@@ -35,10 +37,12 @@ public class EditBlogActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
+        String txtTitulo = intent.getExtras().getString("Titulo");
         String txtEdit = intent.getExtras().getString("Sinopse");
         int imgArt = intent.getExtras().getInt("Imagem");
 
         imgArtigo.setImageResource(imgArt);
         txtEditBlog.setText(txtEdit);
+        txtTituloBlog.setText(txtTitulo);
     }
 }

@@ -49,6 +49,7 @@ public class AdapterBlog extends RecyclerView.Adapter<AdapterBlog.MyViewHolder> 
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, EditBlogActivity.class);
+                intent.putExtra("Titulo", mData.get(position).getTitulo());
                 intent.putExtra("Sinopse", mData.get(position).getSinopse());
                 intent.putExtra("Imagem", mData.get(position).getImagemArt());
                 mContext.startActivity(intent);

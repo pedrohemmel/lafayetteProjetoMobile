@@ -20,7 +20,7 @@
             android:src="@drawable/projeto_aprender_sonhar_logo" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -32,13 +32,14 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
                 android:layout_height="wrap_content"
                 android:background="#00000000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtSenha"
+            android:id="@+id/txtPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -51,6 +52,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:maxLength="24"
                 android:layout_height="wrap_content"
                 android:background="#00000000" />
 

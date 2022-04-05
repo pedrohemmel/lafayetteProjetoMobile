@@ -1,6 +1,7 @@
 package br.com.local.lafayetteprojeto;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,17 @@ public class AdapterGaleria extends RecyclerView.Adapter<AdapterGaleria.MyViewHo
         holder.txtTitulo.setText(mData.get(position).getTitulo());
         holder.txtSecTexto.setText(mData.get(position).getSecTexto());
         holder.txtSinopseGaleria.setText(mData.get(position).getSinopseGaleria());
+
+        holder.btnVisualizarGaleria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, EditGaleriaActivity.class);
+                intent.putExtra("Titulo", mData.get(position).getTitulo());
+                intent.putExtra("Sinopse", mData.get(position).getSinopseGaleria());
+                intent.putExtra("Imagem", mData.get(position).getFoto());
+                mContext.startActivity(intent);
+            }
+        });
 
 
     }
